@@ -7,7 +7,15 @@ var bodyParser = require('body-parser');
 var stylus = require('stylus');
 
 var index = require('./routes/index');
-var users = require('./routes/users');
+var news = require('./routes/news');
+var alumini = require('./routes/alumini');
+var conference_publication = require('./routes/conference_publication');
+var current_member = require('./routes/current_member');
+var gallery = require('./routes/gallery');
+var journal_publication = require('./routes/journal_publication');
+var power_systems = require('./routes/power_systems');
+var sensors = require('./routes/sensors');
+var showcase_projects = require('./routes/showcase_projects');
 
 var app = express();
 
@@ -26,7 +34,15 @@ app.use(stylus.middleware(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
-// app.use('/users', users);
+app.use('/news', news);
+app.use('/alumini', alumini);
+app.use('/conference_publication', conference_publication);
+app.use('/current_member', current_member);
+app.use('/gallery', gallery);
+app.use('/journal_publication', journal_publication);
+app.use('/power_systems', power_systems);
+app.use('/sensors', sensors);
+app.use('/showcase_projects', showcase_projects);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
