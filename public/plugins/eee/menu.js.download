@@ -1,0 +1,15 @@
+/* July 2013 - This is part of the Engineering Departments template */
+
+/* toggles mobile menu */
+function toggle(el) {
+    myEl = document.getElementById(el);
+    myEl.style.display = (myEl.style.display == 'block') ? 'none' : 'block';
+}
+/* toggles submenu on full pages */
+
+function togglemenu(el,ele) {
+    myEl = document.getElementById(el);
+    myEl.style.display = (myEl.style.display == 'block') ? 'none' : 'block';
+    myEle = document.getElementById(ele);
+    myEle.classList.toggle('with-submenu-active');
+}

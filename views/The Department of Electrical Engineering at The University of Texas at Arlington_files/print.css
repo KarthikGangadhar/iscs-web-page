@@ -1,0 +1,16 @@
+body { font-family: 'Minion Pro', Georgia, 'Times New Roman', serif; } 
+.skip, #desktop-header, #mobile-header, nav, aside, img, .moreorless {display:none;}
+p {font-size: 11pt;page-break-inside:avoid}
+h1 {font-size: 22pt; font-weight:bold;margin-bottom:3pt;color:#0064b1;border-bottom:1px solid #0064b1;}
+h2 {font-size: 16pt; font-weight:bold;margin-bottom:3pt;}
+h3 {font-size: 14pt; font-weight:bold;margin-bottom:3pt;}
+h4, h5, h6 {font-size: 13pt; font-weight:bold;margin-bottom:3pt;}
+img.print-only {display:block; max-width:100%}
+article img {display:block; float:right; margin-left: 12pt;}
+section, aside {border-bottom: 1px solid #0064b1;; margin-bottom: 6pt; padding-bottom: 6pt;}
+#extra-text {display:block;}
+a, a:visited, a:hover, a:active {color:#0064b1; text-decoration:none;}
+div.faculty-directory {padding-bottom: 60pt;}
+div.faculty-directory img.align-left {float:left; padding-bottom:6pt; margin-right: 6pt;margin-left:0}
+div.faculty-directory p {clear:both;margin-top: 12pt;}
+footer {clear:both}
