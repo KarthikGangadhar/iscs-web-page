@@ -21,7 +21,7 @@ var glucose_sensing = require('./routes/glucose_sensing');
 var high_throughput = require('./routes/high_throughput');
 var low_noise = require('./routes/low_noise');
 var ultra_wideband = require('./routes/ultra_wideband');
-
+var memristors = require('./routes/memristors')
 var app = express();
 
 // view engine setup
@@ -53,6 +53,7 @@ app.use('/glucose_sensing', glucose_sensing);
 app.use('/high_throughput', high_throughput);
 app.use('/low_noise', low_noise);
 app.use('/ultra_wideband', ultra_wideband);
+app.use('/memristors', memristors);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
