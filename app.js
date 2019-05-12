@@ -22,6 +22,7 @@ var high_throughput = require('./routes/high_throughput');
 var low_noise = require('./routes/low_noise');
 var ultra_wideband = require('./routes/ultra_wideband');
 var memristors = require('./routes/memristors')
+var published_works = require('./routes/published_works')
 var app = express();
 
 // view engine setup
@@ -54,6 +55,7 @@ app.use('/high_throughput', high_throughput);
 app.use('/low_noise', low_noise);
 app.use('/ultra_wideband', ultra_wideband);
 app.use('/memristors', memristors);
+app.use('/published_works', published_works);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
