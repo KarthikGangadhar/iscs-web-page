@@ -16,6 +16,11 @@ var journal_publication = require('./routes/journal_publication');
 var power_systems = require('./routes/power_systems');
 var sensors = require('./routes/sensors');
 var showcase_projects = require('./routes/showcase_projects');
+var bilogical_toxin = require('./routes/bilogical_toxin');
+var glucose_sensing = require('./routes/glucose_sensing');
+var high_throughput = require('./routes/high_throughput');
+var low_noise = require('./routes/low_noise');
+var ultra_wideband = require('./routes/ultra_wideband');
 
 var app = express();
 
@@ -43,6 +48,11 @@ app.use('/journal_publication', journal_publication);
 app.use('/power_systems', power_systems);
 app.use('/sensors', sensors);
 app.use('/showcase_projects', showcase_projects);
+app.use('/bilogical_toxin', bilogical_toxin);
+app.use('/glucose_sensing', glucose_sensing);
+app.use('/high_throughput', high_throughput);
+app.use('/low_noise', low_noise);
+app.use('/ultra_wideband', ultra_wideband);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

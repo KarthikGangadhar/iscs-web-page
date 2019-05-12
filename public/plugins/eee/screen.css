@@ -19,7 +19,7 @@ html {overflow-y: scroll;}
 
 body {
     color: #fff;
-    background: #004f8f url(../_images/elements/bg_body.png) repeat-x center top;
+    background: #004f8f url(./bg_body.png) repeat-x center top;
     
     font-size: 90%;
     font-family: Arial,Helvetica,sans-serif;
