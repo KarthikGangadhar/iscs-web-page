@@ -21,8 +21,9 @@ var glucose_sensing = require('./routes/glucose_sensing');
 var high_throughput = require('./routes/high_throughput');
 var low_noise = require('./routes/low_noise');
 var ultra_wideband = require('./routes/ultra_wideband');
-var memristors = require('./routes/memristors')
-var published_works = require('./routes/published_works')
+var radar_soc = require('./routes/radar_soc');
+var memristors = require('./routes/memristors');
+var published_works = require('./routes/published_works');
 var app = express();
 
 // view engine setup
@@ -54,6 +55,7 @@ app.use('/glucose_sensing', glucose_sensing);
 app.use('/high_throughput', high_throughput);
 app.use('/low_noise', low_noise);
 app.use('/ultra_wideband', ultra_wideband);
+app.use('/radar_soc', radar_soc);
 app.use('/memristors', memristors);
 app.use('/published_works', published_works);
 
